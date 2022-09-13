@@ -1,8 +1,9 @@
-public class Sejour {
+public class Sejour extends OptionVoyage {
     private int nbnuit;
     private double prixnuit;
 
-    public Sejour(int nbNuit, double prixNuit) {
+    public Sejour(String unNom, double unPrix, int nbNuit, double prixNuit) {
+        super(unNom, unPrix);
         this.nbnuit = nbNuit;
         this.prixnuit = prixNuit;
     }
@@ -12,7 +13,7 @@ public class Sejour {
     }
 
     public double getUnPrixNuit() {
-        return prixnuit * nbnuit;
+        return prixnuit * nbnuit + super.prix();
     }
 
 }
