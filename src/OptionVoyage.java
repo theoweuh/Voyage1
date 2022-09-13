@@ -1,7 +1,7 @@
 
 public class OptionVoyage {
-    String nom;
-    double prix;
+    private String nom;
+    private double prix;
 
     public OptionVoyage(String unNom, double unPrix) {
         this.nom = unNom;
@@ -22,4 +22,3 @@ public class OptionVoyage {
     }
 
 }
-// test Commit 2
